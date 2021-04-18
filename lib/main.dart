@@ -247,31 +247,24 @@ class _CardScrollWidgetState extends State<CardScrollWidget> {
                           mainAxisSize: MainAxisSize.min,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Padding(
-                              padding: EdgeInsets.symmetric(
-                                  horizontal: 16.0, vertical: 8.0),
-                              child: Text(title[i],
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 25.0,
-                                      fontFamily: "SF-Pro-Text-Regular")),
-                            ),
-                            SizedBox(
-                              height: 10.0,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(
-                                  left: 12.0, bottom: 12.0),
-                              child: Container(
+                            Container(
+                              color: Colors.blueAccent,
+                              child: Padding(
                                 padding: EdgeInsets.symmetric(
-                                    horizontal: 22.0, vertical: 6.0),
-                                decoration: BoxDecoration(
-                                    color: Colors.blueAccent,
-                                    borderRadius: BorderRadius.circular(20.0)),
-                                child: Text("Read Later",
-                                    style: TextStyle(color: Colors.white)),
+                                    horizontal: 16.0, vertical: 8.0),
+                                child: Text(title[i],
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        shadows: [
+                                          Shadow(
+                                              color: Colors.black,
+                                              blurRadius: 20,
+                                              offset: Offset.zero)
+                                        ],
+                                        fontSize: 25.0,
+                                        fontFamily: "SF-Pro-Text-Regular")),
                               ),
-                            )
+                            ),
                           ],
                         ),
                       )

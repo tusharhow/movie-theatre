@@ -77,7 +77,7 @@ class _MyAppState extends State<MyApp> {
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
                           fontSize: 46.0,
-                          fontFamily: "Calibre-Semibold",
+                         
                           letterSpacing: 1.0,
                         )),
                   ],
@@ -132,7 +132,7 @@ class _MyAppState extends State<MyApp> {
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 46.0,
-                          fontFamily: "Calibre-Semibold",
+                        
                           letterSpacing: 1.0,
                         )),
                   ],
@@ -262,7 +262,7 @@ class _CardScrollWidgetState extends State<CardScrollWidget> {
                                               offset: Offset.zero)
                                         ],
                                         fontSize: 25.0,
-                                        fontFamily: "SF-Pro-Text-Regular")),
+                                       )),
                               ),
                             ),
                           ],
